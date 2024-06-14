@@ -1,37 +1,37 @@
-# MACHINE LEARNING PROJECT
+## MACHINE LEARNING PROJECT
 
-###### 1.Docker Build checked
-###### 2.Github Workflow
-###### 3.Iam User In AWS
+##### 1.Docker Build checked
+##### 2.Github Workflow
+##### 3.Iam User In AWS
 
-# Docker Setup In EC2 commands to be Executed
+## Docker Setup In EC2 commands to be Executed
 
-### #optinal
+##### #optinal
 
-### sudo apt-get update -y
+##### sudo apt-get update -y
 
-### sudo apt-get upgrade
+##### sudo apt-get upgrade
 
-### #required
+##### #required
 
-### curl -fsSL https://get.docker.com -o get-docker.sh
+##### curl -fsSL https://get.docker.com -o get-docker.sh
 
-### sudo sh get-docker.sh
+##### sudo sh get-docker.sh
 
-### sudo usermod -aG docker ubuntu
+##### sudo usermod -aG docker ubuntu
 
-### newgrp docker
+##### newgrp docker
 
-# Configure EC2 as self-hosted runner:
+## Configure EC2 as self-hosted runner:
 
-# Setup github secrets:
+## Setup github secrets:
 
-### AWS_ACCESS_KEY_ID=
+##### AWS_ACCESS_KEY_ID=
 
-### AWS_SECRET_ACCESS_KEY=
+##### AWS_SECRET_ACCESS_KEY=
 
-### AWS_REGION = us-east-1
+##### AWS_REGION = us-east-1
 
-### AWS_ECR_LOGIN_URI = demo>> 566373416292.dkr.ecr.ap-south-1.amazonaws.com
+##### AWS_ECR_LOGIN_URI = demo>> 566373416292.dkr.ecr.ap-south-1.amazonaws.com
 
-### ECR_REPOSITORY_NAME = simple-app
+##### ECR_REPOSITORY_NAME = simple-app
