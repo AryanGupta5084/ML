@@ -1,39 +1,37 @@
 ### MACHINE LEARNING PROJECT
 
-Docker Build checked
+# 1.Docker Build checked
+# 2.Github Workflow
+# 3.Iam User In AWS
 
-Github Workflow
+## Docker Setup In EC2 commands to be Executed
 
-Iam User In AWS
+# optinal
 
-##Docker Setup In EC2 commands to be Executed
+# sudo apt-get update -y
 
-#optinal
+# sudo apt-get upgrade
 
-sudo apt-get update -y
+# required
 
-sudo apt-get upgrade
+# curl -fsSL https://get.docker.com -o get-docker.sh
 
-#required
+# sudo sh get-docker.sh
 
-curl -fsSL https://get.docker.com -o get-docker.sh
+# sudo usermod -aG docker ubuntu
 
-sudo sh get-docker.sh
+# newgrp docker
 
-sudo usermod -aG docker ubuntu
+## Configure EC2 as self-hosted runner:
 
-newgrp docker
+## Setup github secrets:
 
-##Configure EC2 as self-hosted runner:
+# AWS_ACCESS_KEY_ID=
 
-##Setup github secrets:
+# AWS_SECRET_ACCESS_KEY=
 
-AWS_ACCESS_KEY_ID=
+# AWS_REGION = us-east-1
 
-AWS_SECRET_ACCESS_KEY=
+# AWS_ECR_LOGIN_URI = demo>> 566373416292.dkr.ecr.ap-south-1.amazonaws.com
 
-AWS_REGION = us-east-1
-
-AWS_ECR_LOGIN_URI = demo>> 566373416292.dkr.ecr.ap-south-1.amazonaws.com
-
-ECR_REPOSITORY_NAME = simple-app
+# ECR_REPOSITORY_NAME = simple-app
